@@ -1,0 +1,34 @@
+{{!< default}}
+
+<main class="content" role="main">
+
+    <header id="site-head">
+        
+        <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+        {{> header-description}}
+        {{!> menu}}
+    </header>
+
+    {{#foreach posts}}
+
+    <article class="preview">
+        {{#if image}}
+        <div class="preview-image">
+            <a href="{{url}}" title="{{title}}"><p><img src="{{image}}" alt="Featured" /></p></a>
+        </div>
+        {{/if}}
+        <header>
+            <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
+            <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></div>
+        </header>
+        <section class="post-excerpt">
+            <p>{{excerpt}}&hellip;</p>
+            <p class="readmore"><a href="{{url}}">Read this article <i class="fa fa-chevron-circle-right"></i></a></p>
+        </section>
+    </article>
+
+    {{/foreach}}
+
+    {{pagination}}
+
+</main>
