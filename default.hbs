@@ -24,7 +24,7 @@
     <nav id="navigator">
         {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><div class="bloglogo" style="background: url({{@blog.logo}})"></div></a>{{/if}}
         <ul>
-            <li class="ghost"><a href="http://blog.danielcefram.com" title="Blog"></a></li>
+            <li class="ghost"><a href="{{@blog.url}}" title="Blog"></a></li>
             <li class="twitter"><a href="https://twitter.com/dcefram" title="Twitter" target="_blank"></a></li>
             <li class="github"><a href="https://github.com/dcefram" title="GitHub" target="_blank"></a></li>
         </ul>
@@ -35,7 +35,7 @@
     <footer class="site-footer">
         <div class="inner">
             {{!> footer-description}}
-            <section class="copyright">&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved.</section>
+            <section class="copyright">&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved. | <a href="{{@blog.url}}/rss/" target="_blank">RSS</a></section>
             <section>Contents are licensed under... <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons</a>. Codes are <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a> :)</section>
             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org/"><span class="hidden">Ghost</span></a> and ❤</section>
         </div>
