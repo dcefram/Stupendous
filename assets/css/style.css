@@ -159,15 +159,37 @@ img {
 #site-head {
   background: #fff;
   transition: padding ease 0.5s;
+  position: relative;
   width: 100%;
+  z-index: 1;
 }
 #site-head h1,
-#site-head h2 {
+#site-head h2,
+#site-head h3 {
   margin: 0;
   border: 0;
   padding: 0;
   font-family: 'Amatic SC', 'Merriweather', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Nimbus L', sans-serif, cursive;
   text-align: center;
+}
+#site-head h3 {
+  font-size: 35px;
+  margin: 20px;
+}
+#site-head.tag {
+  background: transparent;
+}
+#site-head.tag h1 {
+  color: #fff;
+}
+#site-head.tag h2 {
+  color: #ccc;
+}
+#site-head.tag h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  margin: 20px;
 }
 /**
  * Articles

@@ -1,12 +1,26 @@
 {{!< default}}
 
 <main class="content" role="main">
+    {{#if tag.image}}
+    <div class="post-background">
+        <div class="image" style="background-image: url({{tag.image}});"></div>
+    </div>
+    <header id="site-head" class="tag">
+        <h1 class="blog-title">{{@blog.title}}</h1>
+        {{> header-description}}
+        <h3>#{{tag.name}}</h3>
+    </header>
+
+    {{else}}
 
     <header id="site-head">
         
         <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
         {{> header-description}}
+        <h3>#{{tag.name}}</h3>
     </header>
+
+    {{/if}}
 
     {{#foreach posts}}
 

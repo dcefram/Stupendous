@@ -7,7 +7,7 @@
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
 
-    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="{{asset "images/favicon.png"}}" />
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
@@ -24,7 +24,7 @@
     <nav id="navigator">
         {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><div class="bloglogo" style="background: url({{@blog.logo}})"></div></a>{{/if}}
         <ul>
-            <li class="ghost"><a href="http://blog.danielcefram.com" title="Blog"></a></li>
+            <li class="ghost"><a href="{{@blog.url}}" title="Blog"></a></li>
             <li class="twitter"><a href="https://twitter.com/dcefram" title="Twitter" target="_blank"></a></li>
             <li class="github"><a href="https://github.com/dcefram" title="GitHub" target="_blank"></a></li>
         </ul>

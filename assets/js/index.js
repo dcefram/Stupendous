@@ -9,9 +9,19 @@
     	if ($siteHead.length > 0 ||
             $postHead.length > 0) {
     		// Elementary grade coding skills LOL
-            $siteHead.css({
-                "padding" : (window.innerWidth * 0.15625 / 2) + "px 0px"
-            });
+            if ($siteHead.hasClass("tag"))
+            {
+                $siteHead.css({
+                    "padding" : (window.innerWidth * 0.15625 / 2) + "px 0px " +
+                                (window.innerWidth * 0.15625 / 20) + "px"
+                });
+            }
+            else
+            {
+                $siteHead.css({
+                    "padding" : (window.innerWidth * 0.15625 / 2) + "px 0px"
+                });
+            }
     		$postHead.css({
                 "padding" : (window.innerWidth * 0.078125 / 2) + "px 0px"
             });
