@@ -18,6 +18,20 @@ cleaner and easier to customize. But yeah, you could contribute here too, or at
 least report if there are some glitches here and there as long the browser in 
 question is relevant.
 
+## Changelog
+- 1.1 - 2014-03-10
+    - Added tag.hbs
+    - Use asset helper for favicons
+    - Add google-code-prettify for prettifying codes
+- 1.0 - 2014-03-02
+
+## License
+Copyright (c) 2014-2015, Daniel Cefram Ramirez - Released under The MIT License.
+
+Forked from Vapor, so basically...
+
+Copyright (c) 2013-2014 Seth Lilly - Released under The MIT License.
+
 ## Credits
 
 - [Vapor](https://github.com/sethlilly/Vapor) by [Seth Lilly](http://sethlilly.com)
