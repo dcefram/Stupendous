@@ -19,7 +19,7 @@
             else
             {
                 $siteHead.css({
-                    "padding" : (window.innerWidth * 0.15625 / 2) + "px 0px"
+                    "padding" : (window.innerWidth * 0.15625 / 4) + "px 0px"
                 });
             }
     		$postHead.css({
