@@ -19,11 +19,14 @@ least report if there are some glitches here and there as long the browser in
 question is relevant.
 
 ## Changelog
-- 1.1 - 2014-03-10
+- 1.2 - 2015-04-20
+	- Added support for previous and next post links
+	- Added jeet to stylus folder (due to compilation failure on different environments)
+- 1.1 - 2015-03-10
     - Added tag.hbs
     - Use asset helper for favicons
     - Add google-code-prettify for prettifying codes
-- 1.0 - 2014-03-02
+- 1.0 - 2015-03-02
 
 ## License
 Copyright (c) 2014-2015, Daniel Cefram Ramirez - Released under The MIT License.
