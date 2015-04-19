@@ -1,7 +1,7 @@
 // First time using stylus. This is gonna be real bad coding
 
 // Imports
-@import 'jeet'
+@import 'jeet/stylus/jeet'
 @import url('//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300')
 @import url('//fonts.googleapis.com/css?family=Amatic+SC')
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css')
@@ -404,6 +404,49 @@ img.userimage
     border-radius 50%
     margin-right 10px
     float left
+
+/**
+ * Read next
+ */
+.read-next
+    align-content flex-start
+    display flex
+    flex-wrap wrap
+    margin 15px auto 0
+    max-width 1024px
+    width 90%
+    .read-next-story
+        color textColor
+        padding 2em
+        text-align center
+        flex 1
+        flex-basis 300px
+        &:hover
+            color linkColor
+            h2
+                color linkColor
+            .post:before
+                color linkColor
+                border-color linkColor
+        h2
+            margin 1em 0 0
+            text-align center
+        .post:before
+            content "Now Read This"
+            padding 4px 10px 5px
+            text-transform uppercase
+            font-size 0.8rem
+            font-family "Open Sans", sans-serif
+            color alpha(#000,0.8)
+            border alpha(#000,0.5) 1px solid
+            border-radius 4px
+        &.prev
+            background #f0f0f0
+            .post:before
+                content "You Might Enjoy"
+    .no-cover
+        background headerBackground
+    
 
 /**
  * Footer

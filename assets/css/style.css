@@ -438,6 +438,57 @@ img.userimage {
   float: left;
 }
 /**
+ * Read next
+ */
+.read-next {
+  align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px auto 0;
+  max-width: 1024px;
+  width: 90%;
+}
+.read-next .read-next-story {
+  color: #757575;
+  padding: 2em;
+  text-align: center;
+  flex: 1;
+  flex-basis: 300px;
+}
+.read-next .read-next-story:hover {
+  color: #3498db;
+}
+.read-next .read-next-story:hover h2 {
+  color: #3498db;
+}
+.read-next .read-next-story:hover .post:before {
+  color: #3498db;
+  border-color: #3498db;
+}
+.read-next .read-next-story h2 {
+  margin: 1em 0 0;
+  text-align: center;
+}
+.read-next .read-next-story .post:before {
+  content: "Now Read This";
+  padding: 4px 10px 5px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  color: rgba(0,0,0,0.8);
+  border: rgba(0,0,0,0.5) 1px solid;
+  border-radius: 4px;
+}
+.read-next .read-next-story.prev {
+  background: #f0f0f0;
+}
+.read-next .read-next-story.prev .post:before {
+  content: "You Might Enjoy";
+}
+.read-next .no-cover {
+  background: #fff;
+}
+/**
  * Footer
  */
 footer {
