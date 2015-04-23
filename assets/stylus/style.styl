@@ -416,6 +416,7 @@ img.userimage
     max-width 1024px
     width 90%
     .read-next-story
+        background headerBackground
         color textColor
         padding 2em
         text-align center
@@ -441,11 +442,21 @@ img.userimage
             border alpha(#000,0.5) 1px solid
             border-radius 4px
         &.prev
-            background #f0f0f0
+            color headerWithImageColor
+            background headerColor
+            &:hover
+                color textColor
+                h2
+                    color textColor
+                .post:before
+                    color textColor
+                    border-color textColor
+            h2
+                color headerWithImageColor
             .post:before
+                color headerWithImageColor
                 content "You Might Enjoy"
-    .no-cover
-        background headerBackground
+        
     
 
 /**
