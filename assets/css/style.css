@@ -500,6 +500,7 @@ img.userimage {
 .read-next .read-next-story.prev .post:before {
   color: #fff;
   content: "You Might Enjoy";
+  border: rgba(255,255,255,0.5) 1px solid;
 }
 /**
  * Footer
