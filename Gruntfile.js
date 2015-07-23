@@ -25,7 +25,7 @@ module.exports = function(grunt)
                 },
                 files:
                 {
-                    'assets/css/style.css': 'assets/css/style.styl'
+                    'assets/css/style.css': 'assets/stylus/style.styl'
                 }
             }
         },
@@ -33,7 +33,7 @@ module.exports = function(grunt)
         {
             stylus:
             {
-                files: ['assets/css/*.styl'],
+                files: ['assets/stylus/*.styl'],
                 tasks: ['newer:stylus']
             }
         }
