@@ -5,6 +5,7 @@
     "gulp": "^3.9.1",
     "gulp-batch": "^1.0.5",
     "gulp-stylus": "^2.3.0",
-    "gulp-watch": "^4.3.5"
+    "gulp-watch": "^4.3.5",
+    "jeet": "^6.1.2"
   }
 }
