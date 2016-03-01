@@ -1,52 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>{{meta_title}}</title>
-    <meta name="description" content="{{meta_description}}" />
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
 
-    <link rel="shortcut icon" type="image/png" href="{{asset "images/favicon.png"}}" />
+  <link rel="shortcut icon" type="image/png" href="{{asset "images/favicon.png"}}" />
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
-    <link rel="stylesheet" type="text/css" href="{{ asset "css/normalize.css" }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset "css/prism.css" }}" />
-    <link rel="stylesheet" type="text/css" href="{{ asset "css/style.css" }}" />
+  <link rel="stylesheet" type="text/css" href="{{ asset "css/normalize.css" }}" />
+  <link rel="stylesheet" type="text/css" href="{{ asset "css/prism.css" }}" />
+  <link rel="stylesheet" type="text/css" href="{{ asset "css/style.css" }}" />
 
-    {{#if pagination.next}}<link href="{{page_url pagination.next}}" rel="prefetch" />{{/if}}
+  {{#if pagination.next}}<link href="{{page_url pagination.next}}" rel="prefetch" />{{/if}}
 
-    <script src="{{ asset "js/prism.js" }}"></script>
-
-    {{ghost_head}}
+  {{ghost_head}}
 </head>
 <body class="{{body_class}}">
-    <nav id="navigator">
-        {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><div class="bloglogo" style="background: url({{@blog.logo}})"></div></a>{{/if}}
-        <ul>
-            <li class="ghost"><a href="{{@blog.url}}" title="Blog"></a></li>
-            <li class="twitter"><a href="https://twitter.com/dcefram" title="Twitter" target="_blank"></a></li>
-            <li class="github"><a href="https://github.com/dcefram" title="GitHub" target="_blank"></a></li>
-        </ul>
-    </nav>
+  <nav id="navigator">
+    {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><div class="bloglogo" style="background: url({{@blog.logo}})"></div></a>{{/if}}
+    <ul>
+      <li class="ghost"><a href="{{@blog.url}}" title="Blog"></a></li>
+      <li class="twitter"><a href="https://twitter.com/dcefram" title="Twitter" target="_blank"></a></li>
+      <li class="github"><a href="https://github.com/dcefram" title="GitHub" target="_blank"></a></li>
+    </ul>
+  </nav>
 
-    {{{body}}}
+  {{{body}}}
 
-    <footer class="site-footer">
-        <div class="inner">
-            {{!> footer-description}}
-            <section class="copyright">&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved. | <a href="{{@blog.url}}/rss/" target="_blank">RSS</a></section>
-            <section>Contents are licensed under... <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons</a>. Codes are <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a> :)</section>
-            <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org/"><span class="hidden">Ghost</span></a> and ❤</section>
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <div class="inner">
+      {{!> footer-description}}
+      <section class="copyright">&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved. | <a href="{{@blog.url}}/rss/" target="_blank">RSS</a></section>
+      <section>Contents are licensed under... <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons</a>. Codes are <a href="http://opensource.org/licenses/MIT" target="_blank">MIT</a> :)</section>
+      <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org/"><span class="hidden">Ghost</span></a> and ❤</section>
+    </div>
+  </footer>
 
-    {{ghost_foot}}
+  {{ghost_foot}}
 
-    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
-    
+  <script async type="text/javascript" src="{{asset "js/index.js"}}"></script>
+  <script async type="text/javascript" src="{{ asset "js/prism.js" }}"></script>
+
 </body>
 </html>
