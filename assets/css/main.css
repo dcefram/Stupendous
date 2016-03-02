@@ -1,6 +1,6 @@
 @import url("//fonts.googleapis.com/css?subset=latin,cyrillic-ext,latin-ext,cyrillic&family=Open+Sans+Condensed:300|Open+Sans:400,600,400italic,600italic|Merriweather:400,300,300italic,400italic,700,700italic|Roboto+Slab:400,300");
 @import url("//fonts.googleapis.com/css?family=Amatic+SC");
-@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 html,
 body,
 div,
@@ -91,4 +91,103 @@ td {
 }
 a img {
   border: none;
+}
+/* include component styles */
+body {
+  background-color: #eee;
+  color: #757575;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+body * {
+  max-height: 1000000em;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+dt,
+dd {
+  font-family: 'Merriweather', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Nimbus L', sans-serif;
+}
+h1,
+.post-meta {
+  text-align: center;
+}
+a,
+a:visited {
+  color: #03a9f4;
+  text-decoration: none;
+  -webkit-transition: all ease 0.7s;
+  -moz-transition: all ease 0.7s;
+  -o-transition: all ease 0.7s;
+  -ms-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+  -webkit-transition: all ease 0.7s;
+}
+a:focus,
+a:hover {
+  color: #01547a;
+}
+p,
+li,
+dt,
+dd {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 25px;
+}
+dt {
+  font-weight: 400;
+}
+li {
+  padding-left: 0.8em;
+}
+pre {
+  -moz-box-sizing: border-box;
+  background: #e0e0e0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #9e9e9e 1px solid;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-family: 'Consolas', Courier, monospace;
+  font-size: 0.9em;
+  margin: 0 0 1.75em 0;
+  overflow: auto;
+  padding: 10px;
+  width: 100%;
+  white-space: pre;
+}
+p code {
+  background: #e0e0e0;
+  border: 1px solid #9e9e9e 1px solid;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font-family: 'Consolas', Courier, monospace;
+  font-size: 0.85em;
+  line-height: 1.2em;
+  padding: 1px 3px;
+  white-space: pre-wrap;
+}
+h1 {
+  color: #fff;
+  font-family: 'Amatic SC', 'Merriweather', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Nimbus L', sans-serif, cursive;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 60px;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

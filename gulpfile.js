@@ -8,7 +8,7 @@ let jeet   = require('jeet');
 let nib    = require('nib');
 
 gulp.task('stylus', () => {
-  return gulp.src('./src/stylus/**/*.styl')
+  return gulp.src('./src/stylus/main.styl')
     .pipe(stylus({
       use: [jeet(), nib()],
       import: ['jeet', 'nib']
