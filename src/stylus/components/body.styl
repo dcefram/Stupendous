@@ -1,0 +1,430 @@
+/**
+ * Articles
+ */
+article, article.preview, a.archive-link, .article-nav
+  position relative
+  max-width 1024px
+  overflow hidden
+  width 90%
+  z-index 1
+
+article
+  margin auto
+  background white
+  .preview-image
+    background black
+    display inline-block
+    width 100%
+    a
+      display block
+      &:hover
+        opacity 0.8
+    p
+      margin 0
+  header
+    padding 3em 0.5em 0
+    .post-title
+      font-family headerFontFamily
+      font-size 35px
+  .post-excerpt
+    padding 0em 1.5em 1.5em
+
+article.preview
+  margin 1em auto 2em
+  text-align center
+  p.readmore
+    font-family headerFontFamily
+    margin-top 1em
+    font-weight 400
+    a
+      color lightBlue500
+      font-size 1.4em
+      &:hover
+        color darken(lightBlue500, 50%)
+
+/**
+ * Single Posts
+ */
+.content
+  position relative
+
+.post-background
+  background black
+  position absolute
+  width 100%
+  min-height 300px
+  .image
+    background-repeat no-repeat
+    background-position center
+    background-size cover
+    position absolute
+    top 0
+    left 0
+    height 100%
+    width 100%
+    opacity 0.5
+    z-index 0
+
+.post-header
+  position relative
+  padding 10em 1em 5em
+  max-width 1024px
+  margin auto
+  transition padding ease 0.5s
+  z-index 1
+  h1
+    color white
+    font-family headerFontFamily
+    font-size 40px
+  .post-meta
+    color #EEE
+
+article.post
+  .post-content
+    padding 0.5em 1.5em
+    word-wrap break-word
+  &.no-post-header
+    margin-top 2em
+
+section.footer-description
+  margin-bottom 1em
+
+header.article-header, header.page-header
+  margin-bottom 3em
+
+.content
+  background-repeat no-repeat
+  background-position top center
+  background-size 100% auto
+
+/**
+ * Body
+ */
+section.author, section.share
+  width 100%
+  text-align left
+  text-transform none
+
+section.share
+  border-top 1px solid grey200
+  text-align center
+  width auto
+  padding-top 1em
+  margin 1em 2em 0
+
+section.author h4, section.author p, section.share p
+  padding 0
+  margin 0
+
+section.author h4
+  font-family secondaryFontFamily
+  font-weight 400
+  margin-bottom 4px
+
+section.author p.attr, section.share p.info
+  font-size 16px
+  line-height 20px
+  text-transform uppercase
+  font-family secondaryFontFamily
+
+section.share p.info
+  display inline-block
+  &.prompt
+    top -5px
+    position relative
+
+section.share p.attr
+  margin-bottom 2px
+
+section.author p.bio
+  font-size 16px
+  margin-left 82px
+  line-height 1.4em
+
+blockquote
+  font-family baseFontFamily
+  font-size 1em
+  font-weight 300
+  line-height 1.2em
+  font-style italic
+  border-left 0.4em solid grey800
+  margin-left 1em
+  padding-left 1em
+  p
+    font-family baseFontFamily
+    font-size 1.2em
+    font-weight 300
+    line-height 1.5em
+    font-style italic
+
+.post-meta
+  color #95A5A6
+  font-family baseFontFamily
+  font-size 16px
+  font-weight 300
+  margin 0.5em 0
+
+.tags
+  font-size 16px
+  margin-top 1em
+  margin-bottom 0.6em
+
+div.authorimage
+  width 70px
+  height 70px
+  border-radius 50%
+  -webkit-background-size cover !important
+  background-size cover !important
+  background-position center !important
+  margin-right 10px
+  float left
+
+h1.post-title a, h1.blog-title a
+  color #151515
+  transition color ease 0.7s
+  -webkit-transition color ease 0.7s
+
+h1.post-title a:focus, h1.post-title a:hover, h1.blog-title a:focus, h1.blog-title a:hover
+  color lightBlue500
+  text-decoration none
+
+h2
+  font-family headerFontFamily
+  margin-top 1.5em
+  text-transform uppercase
+  font-weight 300
+  color grey600
+
+section.post-content
+  h2
+    font-weight bold
+  img
+    display block
+    margin 1em auto
+    max-width 100%
+
+section.preview.archive h2
+  text-align left
+
+section.author
+  overflow hidden
+
+img.userimage
+  width 70px
+  max-width 70px
+  max-height 70px
+  border-radius 50%
+  margin-right 10px
+  float left
+
+/**
+ * Read next
+ */
+.read-next
+  align-content flex-start
+  display -webkit-flex
+  display flex
+  flex-wrap wrap
+  margin 15px auto 0
+  max-width 1024px
+  width 90%
+  .read-next-story
+    background white
+    color grey600
+    padding 2em
+    text-align center
+    flex 1
+    flex-basis 300px
+    &:hover
+      color lightBlue500
+      h2
+        color lightBlue500
+      .post:before
+        color lightBlue500
+        border-color lightBlue500
+    h2
+      margin 1em 0 0
+      text-align center
+    .post:before
+      content "Now Read This"
+      padding 4px 10px 5px
+      text-transform uppercase
+      font-size 0.8rem
+      font-family "Open Sans", sans-serif
+      color alpha(#000,0.8)
+      border alpha(#000,0.5) 1px solid
+      border-radius 4px
+    &.prev
+      color white
+      background black
+      &:hover
+        color grey600
+        h2
+          color grey600
+        .post:before
+          color grey600
+          border-color grey600
+      h2
+        color white
+      .post:before
+        color white
+        content "You Might Enjoy"
+        border alpha(white,0.5) 1px solid
+
+/**
+ * Footer
+ */
+footer
+  background rgba(#000, 0.05)
+  margin 4em 0 0
+  padding 2em 0
+  text-align center
+  section
+    font-family secondaryFontFamily
+    font-weight 300
+    font-size 18px
+    margin 0 auto
+    max-width 600px
+    text-transform uppercase
+    width 90%
+  &.post-footer
+    background none
+    border-top 1px solid grey200
+    margin 1em 2em 0
+
+.copyright
+  color
+
+/**
+ * Pagination
+ */
+nav
+  border-bottom 1px solid grey200
+  border-top 1px solid grey200
+  margin-bottom 2em
+  text-align center
+  margin 20px auto 2em auto
+  max-width 600px
+  ul
+    list-style none
+    margin 0 auto
+    padding 0
+    width 100%
+    overflow hidden
+    text-align center
+    li
+      display inline-block
+      font-family secondaryFontFamily
+      font-size 18px
+      font-weight 300
+      margin 0
+      padding 0 0.5em
+      text-align center
+      text-transform uppercase
+      a
+        display block
+        padding 0.5em 0
+  &.menu
+    margin-bottom 2.5em
+    li
+      margin 0 0.5em
+      padding 0
+      &:last-child
+        margin 0
+  &.pagination
+    li
+      &:first-child
+        margin-left 0
+        margin-right 0
+        text-align right
+      &:last-child
+        margin-left 0
+        margin-right 0
+        text-align left
+a.archive-link
+  border-bottom 1px solid grey200
+  border-top 1px solid grey200
+  display block
+  font-family secondaryFontFamily
+  font-size 24px
+  font-weight 300
+  margin-bottom 3em
+  margin-top 3em
+  padding 0.5em 0
+  text-align center
+  text-transform uppercase
+
+.pagination
+  position relative
+  width 90%
+  max-width 600px
+  font-family secondaryFontFamily
+  text-transform uppercase
+  font-size 20px
+  color #7F8C8D
+  text-align center
+  padding 0.5em 0
+  a
+    color #3498DB
+
+.older-posts, .newer-posts
+  position absolute
+  display inline-block
+  padding 0
+  text-decoration none
+  transition color ease 0.7s
+  -webkit-transition color ease 0.7s
+
+.older-posts
+  right 0
+
+.page-number
+  display inline-block
+  padding 0
+  margin 0
+
+.newer-posts
+  left 0
+
+.older-posts:hover, .newer-posts:hover
+  color black
+  text-decoration none
+
+
+/**
+ * Media Queries
+ */
+@media only screen and (min-width: 320px) and (max-width: 500px)
+  footer section span.copyright
+    display block
+
+  nav li
+    width auto
+
+  .older-posts, .newer-posts
+    position static
+
+  .newer-posts
+    margin-bottom 10px
+
+  .older-posts
+    margin-top 10px
+
+  .page-number
+    display block
+
+  .post-title
+    line-height 35px
+
+@media only screen and (min-width: 600px)
+  #navigator #blog-logo
+    margin-left 10px
+
+  article.post .post-content
+    padding 2em 5em
+
+  .post-header h1
+    font-size 36px
+
+  .post-background
+    height 500px
