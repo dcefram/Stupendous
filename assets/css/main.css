@@ -652,15 +652,15 @@ a.archive-link {
   float: right;
   width: auto;
 }
-#navigator ul li.ghost a {
+#navigator ul li.nav-home a {
   background-color: #60666a;
   background-image: url("../images/ghost.png");
 }
-#navigator ul li.twitter a {
+#navigator ul li.nav-twitter a {
   background-color: #55acee;
   background-image: url("../images/twitter.png");
 }
-#navigator ul li.github a {
+#navigator ul li.nav-github a {
   background-color: #000;
   background-image: url("../images/github.png");
 }
@@ -738,8 +738,8 @@ a.archive-link {
   font-weight: normal;
   font-style: normal;
 }
-.icon-ghost,
-.icon-feed {
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
   font-family: 'icons';
   speak: none;
   font-style: normal;
@@ -747,8 +747,9 @@ a.archive-link {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  -webkit-font-smoothing: antialiased;
   text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -mox-osx-font-smoothing: grayscale;
 }
 .icon-ghost:before {
   content: '\e000';
