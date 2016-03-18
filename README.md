@@ -18,6 +18,7 @@ Just fork. Send pull requests. And/Or submit issues.
 ## FAQ
 
 **Q. I added additional links to my navigation, but it does not show up on my blog. How to fix that?**
+
 This theme needs icons to display your navigation. It uses the page name and appends a `nav-` as the class of the navigation link. There are 8 icons included on this theme out of the box. These are links for:
 
 - home
