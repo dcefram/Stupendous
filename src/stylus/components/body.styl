@@ -394,12 +394,37 @@ a.archive-link
 /**
  * Media Queries
  */
-@media only screen and (min-width: 320px) and (max-width: 500px)
+@media only screen and (max-width: 750px)
   footer section span.copyright
     display block
 
-  nav li
-    width auto
+  nav#navigator
+
+    .blog-logo.out-logo
+      display none
+
+    .logo
+      flex 0
+
+      .in-logo
+        display inline-block
+        max-width 100%
+
+      .logo-image
+        margin auto
+
+    ul.nav
+      display flex
+      float left
+      flex-wrap wrap
+
+      li
+        width auto
+        flex 1 auto
+
+        a
+          min-width 80px
+          width 100%
 
   .older-posts, .newer-posts
     position static
@@ -416,9 +441,9 @@ a.archive-link
   .post-title
     line-height 35px
 
-@media only screen and (min-width: 600px)
-  #navigator #blog-logo
-    margin-left 10px
+@media only screen and (min-width: 751px)
+  #navigator .in-logo
+    display none
 
   article.post .post-content
     padding 2em 5em

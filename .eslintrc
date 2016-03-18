@@ -1,17 +1,12 @@
 {
-  "extends": "airbnb",
-  "parser": "babel-eslint",
   "ecmaFeatures": {
-    "classes": true
-  },
-  "rules": {
-    "comma-dangle": 0,
-    "semi": [2, "always"]
-  },
-  "globals": {
-    "__ENVIRONMENT__": true
+    "modules": true
   },
   "env": {
-    "mocha": true
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "comma-dangle": 0
   }
 }

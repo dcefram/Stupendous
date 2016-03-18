@@ -1,4 +1,4 @@
-/*globals jQuery, document */
+// Elementary grade coding skills LOL
 (function () {
   'use strict';
 
@@ -6,8 +6,7 @@
   var $postHead = '';
 
   var resizeHead = function() {
-  	if ($siteHead instanceof HTMLElement) {
-  		// Elementary grade coding skills LOL
+    if ($siteHead instanceof HTMLElement) {
       if ($siteHead.classList.contains('tag') ||
         /(^tag )|( tag$)|^tag$/.test($siteHead.className))
       {

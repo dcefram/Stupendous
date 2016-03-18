@@ -1,0 +1,20 @@
+# 1.4.0 - 2016-03-18
+  - Add custom navigation support
+  - Add additional icons (icons from [iconfinder/social-hand-drawn-icons](https://www.iconfinder.com/iconsets/social-hand-drawn-icons))
+  - Fix static page style
+# 1.3.1 - 2015-07-23
+  - Fix read-next display on Safari [#1](https://github.com/dcefram/stupendous/issues/1)
+  - Fix grunt's stylus task to point to correct folder path
+  - Change versioning from m.m to m.m.p (major.minor.patch)
+  - Change spacing from 4 spaces to 2 spaces for both JS and Stylus files
+# 1.3.0 - 2015-04-23
+  - Added prism for code syntax highlight
+  - Updated previous post style
+# 1.2.0 - 2015-04-20
+  - Added support for previous and next post links
+  - Added jeet to stylus folder (due to compilation failure on different environments)
+# 1.1.0 - 2015-03-10
+  - Added tag.hbs
+  - Use asset helper for favicons
+  - Add google-code-prettify for prettifying codes
+# 1.0.0 - 2015-03-02

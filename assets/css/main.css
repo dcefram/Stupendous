@@ -130,6 +130,92 @@ table tbody tr:nth-child(even) {
 table tfoot {
   border-top: 1px solid #ecf0f1;
 }
+#navigator {
+  background: #000;
+  max-width: 100%;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border: 0;
+}
+#navigator .blog-logo {
+  max-width: 80px;
+  max-height: 80px;
+  text-align: center;
+  float: left;
+}
+#navigator .blog-logo .logo-image {
+  width: 80px;
+  height: 80px;
+}
+#navigator .blog-logo.out-logo {
+  display: inline-block;
+}
+#navigator ul {
+  float: right;
+  width: auto;
+}
+#navigator ul li.nav-home a {
+  background-color: #60666a;
+  background-image: url("../images/ghost.png");
+}
+#navigator ul li.nav-about a {
+  background-color: #b71c1c;
+  background-image: url("../images/about.png");
+}
+#navigator ul li.nav-twitter a {
+  background-color: #55acee;
+  background-image: url("../images/twitter.png");
+}
+#navigator ul li.nav-github a {
+  background-color: #000;
+  background-image: url("../images/github.png");
+}
+#navigator ul li.nav-facebook a {
+  background-color: #3a5795;
+  background-image: url("../images/facebook.png");
+}
+#navigator ul li.nav-vk a {
+  background-color: #4e729a;
+  background-image: url("../images/vk.png");
+}
+#navigator ul li.nav-bitbucket a {
+  background-color: #205081;
+  background-image: url("../images/bitbucket.png");
+}
+#navigator ul li.nav-instagram a {
+  background-color: #0d3c5f;
+  background-image: url("../images/instagram.png");
+}
+#navigator ul li {
+  float: left;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+#navigator ul li a {
+  -webkit-background-size: 50px auto;
+  -moz-background-size: 50px auto;
+  background-size: 50px auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  -webkit-transition: background-size ease 0.5s;
+  -webkit-transition: background-size ease 0.5s;
+  -moz-transition: background-size ease 0.5s;
+  -o-transition: background-size ease 0.5s;
+  -ms-transition: background-size ease 0.5s;
+  transition: background-size ease 0.5s;
+}
+#navigator ul li a:hover {
+  -webkit-background-size: 60px auto;
+  -moz-background-size: 60px auto;
+  background-size: 60px auto;
+}
 article,
 article.preview,
 a.archive-link,
@@ -590,12 +676,46 @@ a.archive-link {
   color: #000;
   text-decoration: none;
 }
-@media only screen and (min-width: 320px) and (max-width: 500px) {
+@media only screen and (max-width: 750px) {
   footer section span.copyright {
     display: block;
   }
-  nav li {
+  nav#navigator .blog-logo.out-logo {
+    display: none;
+  }
+  nav#navigator .logo {
+    -webkit-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+  }
+  nav#navigator .logo .in-logo {
+    display: inline-block;
+    max-width: 100%;
+  }
+  nav#navigator .logo .logo-image {
+    margin: auto;
+  }
+  nav#navigator ul.nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    float: left;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  nav#navigator ul.nav li {
     width: auto;
+    -webkit-flex: 1 auto;
+    -ms-flex: 1 auto;
+    flex: 1 auto;
+  }
+  nav#navigator ul.nav li a {
+    min-width: 80px;
+    width: 100%;
   }
   .older-posts,
   .newer-posts {
@@ -614,9 +734,9 @@ a.archive-link {
     line-height: 35px;
   }
 }
-@media only screen and (min-width: 600px) {
-  #navigator #blog-logo {
-    margin-left: 10px;
+@media only screen and (min-width: 751px) {
+  #navigator .in-logo {
+    display: none;
   }
   article.post .post-content {
     padding: 2em 5em;
@@ -627,70 +747,6 @@ a.archive-link {
   .post-background {
     height: 500px;
   }
-}
-#navigator {
-  background: #000;
-  max-width: 100%;
-  margin: 0;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
-  border: 0;
-}
-#navigator #blog-logo {
-  display: inline-block;
-  max-width: 80px;
-  max-height: 80px;
-  text-align: center;
-  float: left;
-}
-#navigator #blog-logo .bloglogo {
-  width: 80px;
-  height: 80px;
-}
-#navigator ul {
-  float: right;
-  width: auto;
-}
-#navigator ul li.nav-home a {
-  background-color: #60666a;
-  background-image: url("../images/ghost.png");
-}
-#navigator ul li.nav-twitter a {
-  background-color: #55acee;
-  background-image: url("../images/twitter.png");
-}
-#navigator ul li.nav-github a {
-  background-color: #000;
-  background-image: url("../images/github.png");
-}
-#navigator ul li {
-  float: left;
-  height: 80px;
-  margin: 0;
-  padding: 0;
-}
-#navigator ul li a {
-  -webkit-background-size: 50px auto;
-  -moz-background-size: 50px auto;
-  background-size: 50px auto;
-  background-repeat: no-repeat;
-  background-position: center center;
-  display: inline-block;
-  padding: 0;
-  width: 80px;
-  height: 80px;
-  -webkit-transition: background-size ease 0.5s;
-  -webkit-transition: background-size ease 0.5s;
-  -moz-transition: background-size ease 0.5s;
-  -o-transition: background-size ease 0.5s;
-  -ms-transition: background-size ease 0.5s;
-  transition: background-size ease 0.5s;
-}
-#navigator ul li a:hover {
-  -webkit-background-size: 60px auto;
-  -moz-background-size: 60px auto;
-  background-size: 60px auto;
 }
 #site-head {
   background: #fff;
