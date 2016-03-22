@@ -83,6 +83,7 @@ article.post
   .post-content
     padding 0.5em 1.5em
     word-wrap break-word
+    cf()
   &.no-post-header
     margin-top 2em
 
@@ -389,6 +390,19 @@ a.archive-link
 .older-posts:hover, .newer-posts:hover
   color black
   text-decoration none
+
+
+/**
+ * Shortcodes
+ */
+for numerator in (1..5)
+  for denominator in (1..5)
+    for offset in (0..5)
+      .col-{numerator}-{denominator}-offset-{offset}
+        if offset == 0
+          col(numerator/denominator, offset)
+        else
+          col(numerator/denominator, offset/denominator)
 
 
 /**

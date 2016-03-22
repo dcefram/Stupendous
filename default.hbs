@@ -21,7 +21,10 @@
 
   {{ghost_head}}
 </head>
-<body class="{{body_class}}">
+<body class="{{body_class}} loading">
+  <div id="spinner">
+    <div class='uil-ripple-css' style='transform:scale(0.6);'><div></div><div></div></div>
+  </div>
   <nav id="navigator">
     {{#if @blog.logo}}<a class="blog-logo out-logo" href="{{@blog.url}}"><div class="logo-image" style="background: url({{@blog.logo}})"></div></a>{{/if}}
     {{navigation}}
@@ -40,8 +43,9 @@
 
   {{ghost_foot}}
 
-  <script async type="text/javascript" src="{{asset "js/index.js"}}"></script>
+  <script type="text/javascript" src="{{asset "js/shortcode.js"}}"></script>
   <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
+  <script async type="text/javascript" src="{{asset "js/main.js"}}"></script>
 
 </body>
 </html>

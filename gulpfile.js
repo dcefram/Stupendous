@@ -1,11 +1,13 @@
 'use strict';
 
-let gulp   = require('gulp');
-let stylus = require('gulp-stylus');
-let watch  = require('gulp-watch');
-let batch  = require('gulp-batch');
-let jeet   = require('jeet');
-let nib    = require('nib');
+const gulp       = require('gulp');
+const stylus     = require('gulp-stylus');
+const watch      = require('gulp-watch');
+const batch      = require('gulp-batch');
+const jeet       = require('jeet');
+const nib        = require('nib');
+const browserify = require('browserify')
+const source     = require('vinyl-source-stream');
 
 gulp.task('stylus', () => {
   return gulp.src('./src/stylus/main.styl')
@@ -16,10 +18,23 @@ gulp.task('stylus', () => {
     .pipe(gulp.dest('./assets/css'));
 });
 
-gulp.task('watch', ['stylus'], () => {
-  watch('./assets/stylus/**/*.styl', batch((events, done) => {
-    gulp.start('stylus', done);
+gulp.task('browserify', () => {
+  return browserify('./src/js/main.js')
+    .transform('babelify', { presets: ['es2015'] })
+    .bundle()
+    .pipe(source('main.js'))
+    .pipe(gulp.dest('./assets/js'));
+});
+
+gulp.task('watch', ['stylus', 'browserify'], () => {
+  watch([
+    './assets/stylus/**/*.styl',
+    './assets/js/**/*.js'
+  ], batch((events, done) => {
+    gulp.start('stylus', () => {
+      gulp.start('browserify', done);
+    });
   }));
 });
 
-gulp.task('default', ['stylus']);
+gulp.task('default', ['stylus', 'browserify']);
