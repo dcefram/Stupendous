@@ -8,7 +8,7 @@ const Stupendous = {
     const postHead = Stupendous.postHeader;
 
     if (siteHead instanceof HTMLElement) {
-      if (siteHead.classList.contains('tag') ||
+      if ((siteHead.classList && siteHead.classList.contains('tag')) ||
         /(^tag )|( tag$)|^tag$/.test(siteHead.className)) {
         siteHead.style.padding =
           (window.innerWidth * 0.15625 / 2) + 'px 0px ' +

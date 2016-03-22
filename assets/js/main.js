@@ -13,7 +13,7 @@ var Stupendous = {
     var postHead = Stupendous.postHeader;
 
     if (siteHead instanceof HTMLElement) {
-      if (siteHead.classList.contains('tag') || /(^tag )|( tag$)|^tag$/.test(siteHead.className)) {
+      if (siteHead.classList && siteHead.classList.contains('tag') || /(^tag )|( tag$)|^tag$/.test(siteHead.className)) {
         siteHead.style.padding = window.innerWidth * 0.15625 / 2 + 'px 0px ' + window.innerWidth * 0.15625 / 20 + 'px';
       } else {
         siteHead.style.padding = window.innerWidth * 0.15625 / 4 + 'px 0px';

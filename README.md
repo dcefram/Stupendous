@@ -11,6 +11,10 @@ Most icons are from the old casper theme and from [icon-finder](https://www.icon
 Check out [my blog](http://blog.dcefram.com) if ever you are curious as to
 how this thing look like.
 
+This theme only supports Blink based browsers (Chrome, Opera), Safari, Firefox, and IE10+ (including Edge). IE9 might be supported.
+
+I don't plan to support older IE because those browsers will stay if websites still support it, even though those browsers are not supported anymore
+
 ## Contributing and Forking
 
 Just fork. Send pull requests. And/Or submit issues.
