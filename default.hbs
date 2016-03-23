@@ -17,6 +17,8 @@
   <link rel="stylesheet" type="text/css" href="{{ asset "css/prism.css" }}" />
   <link rel="stylesheet" type="text/css" href="{{ asset "css/main.css" }}" />
 
+  <script src="{{asset "js/shims.js"}}"></script>
+
   {{#if pagination.next}}<link href="{{page_url pagination.next}}" rel="prefetch" />{{/if}}
 
   {{ghost_head}}
