@@ -67,6 +67,14 @@ const Stupendous = {
 
       body.className = classNames.join(' ');
     }
+
+    Stupendous.initDisqus();
+  },
+
+  initDisqus() {
+    if (window.initDisqus && typeof initDisqus === 'function') {
+      window.initDisqus();
+    }
   }
 }
 
