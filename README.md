@@ -8,7 +8,7 @@ from less.
 Most icons are from the old casper theme and from [icon-finder](https://www.iconfinder.com)
 (Only icons with license that permits me to use it for free)
 
-Check out [my blog](http://blog.dcefram.com) if ever you are curious as to
+Check out [my blog](http://dcefram.com) if ever you are curious as to
 how this thing look like.
 
 This theme only supports Blink based browsers (Chrome, Opera), Safari, Firefox, and IE10+ (including Edge). IE9 might be supported.
@@ -51,7 +51,7 @@ Just add your css after [line 190](https://github.com/dcefram/stupendous/blob/ma
 
 ## Changelog
 
-See [Changelog](CHANGELOG.md) file
+See [Releases](https://github.com/dcefram/stupendous/releases)
 
 ## What's next?
 
