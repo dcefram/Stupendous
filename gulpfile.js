@@ -27,8 +27,8 @@ gulp.task('babel', () => {
 
 gulp.task('watch', ['stylus', 'babel'], () => {
   watch([
-    './assets/stylus/**/*.styl',
-    './assets/js/**/*.js'
+    './src/stylus/**/*.styl',
+    './src/js/**/*.js'
   ], batch((events, done) => {
     gulp.start('stylus', () => {
       gulp.start('babel', done);
