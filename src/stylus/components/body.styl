@@ -391,20 +391,6 @@ a.archive-link
   color black
   text-decoration none
 
-
-/**
- * Shortcodes
- */
-for numerator in (1..5)
-  for denominator in (1..5)
-    for offset in (0..5)
-      .col-{numerator}-{denominator}-offset-{offset}
-        if offset == 0
-          col(numerator/denominator, offset)
-        else
-          col(numerator/denominator, offset/denominator)
-
-
 /**
  * Media Queries
  */
@@ -413,9 +399,6 @@ for numerator in (1..5)
     display block
 
   nav#navigator
-
-    .blog-logo.out-logo
-      display none
 
     .logo
       flex 0

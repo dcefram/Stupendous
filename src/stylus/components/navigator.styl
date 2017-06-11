@@ -6,57 +6,40 @@
   position relative
   z-index 1
   border 0
-  .blog-logo
-    max-width 80px
-    max-height 80px
+  
+  .site-title
+    font-family headerFontFamily
+    font-size 40px
+    position absolute
+    height 100%
+    width 100%
     text-align center
-    float left
-    .logo-image
-      width 80px
-      height 80px
-    &.out-logo
-      display inline-block
+    left 0
+    display flex
+    align-items center
+    justify-content center
+    color white
+    z-index 0
+    
+    &:hover
+      color darken(white, 50%)
+
   ul
-    float right
+    float left
     width auto
-    li.nav-home a
-      background-color #60666a
-      background-image url('../images/ghost.png?rand=1')
-    li.nav-about a
-      background-color #b71c1c
-      background-image url('../images/about.png?rand=1')
-    li.nav-twitter a
-      background-color #55acee
-      background-image url('../images/twitter.png?rand=1')
-    li.nav-github a
-      background-color #000
-      background-image url('../images/github.png?rand=1')
-    li.nav-facebook a
-      background-color #3A5795
-      background-image url('../images/facebook.png?rand=1')
-    li.nav-vk a
-      background-color #4E729A
-      background-image url('../images/vk.png?rand=1')
-    li.nav-bitbucket a
-      background-color #205081
-      background-image url('../images/bitbucket.png?rand=1')
-    li.nav-instagram a
-      background-color #0D3C5F
-      background-image url('../images/instagram.png?rand=1')
+    position relative
+    z-index 1
+    margin-left 30px
+    
     li
       float left
       height 80px
       margin 0
-      padding 0
+
       a
-        background-size 50px auto
-        background-repeat no-repeat
-        background-position center center
+        color white
         display inline-block
-        padding 0
-        width 80px
-        height 80px
-        -webkit-transition background-size ease 0.5s
-        transition background-size ease 0.5s
+        padding 27px 10px
+
         &:hover
-          background-size 60px auto
+          color lightBlue500
