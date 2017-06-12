@@ -166,6 +166,12 @@ table tfoot {
   position: relative;
   z-index: 1;
   border: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
 }
 #navigator .site-title {
   font-family: 'Amatic SC', 'Merriweather', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Nimbus L', sans-serif, cursive;
@@ -208,8 +214,9 @@ table tfoot {
   vertical-align: middle;
 }
 #navigator ul {
-  float: left;
-  width: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   position: relative;
   z-index: 1;
   margin-left: 30px;
@@ -225,6 +232,42 @@ table tfoot {
   padding: 27px 10px;
 }
 #navigator ul li a:hover {
+  color: #03a9f4;
+}
+#navigator .socials {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  text-align: right;
+  z-index: 1;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -o-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+#navigator .socials a {
+  color: #fff;
+}
+#navigator .socials a i {
+  font-size: 22px;
+}
+#navigator .socials a:hover {
   color: #03a9f4;
 }
 article,
