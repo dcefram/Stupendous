@@ -193,11 +193,19 @@ table tfoot {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  color: #fff;
   z-index: 0;
 }
-#navigator .site-title:hover {
+#navigator .site-title a {
+  color: #fff;
+}
+#navigator .site-title a:hover {
   color: #808080;
+}
+#navigator .site-title .logo-image {
+  display: inline-block;
+  min-width: 80px;
+  max-height: 40px;
+  vertical-align: middle;
 }
 #navigator ul {
   float: left;
@@ -277,6 +285,10 @@ article.preview p.readmore a:hover {
 }
 .content {
   position: relative;
+  padding-top: 40px;
+}
+.content.with-header {
+  padding-top: 0;
 }
 .post-background {
   background: #000;
