@@ -1,0 +1,59 @@
+
+/**
+ * Media Queries
+ */
+@media only screen and (max-width: 750px)
+
+  footer section span.copyright
+    display block
+
+  nav#navigator
+
+    .logo
+      flex 0
+
+      .in-logo
+        display inline-block
+        max-width 100%
+
+      .logo-image
+        margin auto
+
+    ul.nav
+      display flex
+      float left
+      flex-wrap wrap
+
+      li
+        width auto
+        flex 1 auto
+
+        a
+          min-width 80px
+          width 100%
+
+  .older-posts, .newer-posts
+    position static
+
+  .newer-posts
+    margin-bottom 10px
+
+  .older-posts
+    margin-top 10px
+
+  .page-number
+    display block
+
+  .post-title
+    line-height 35px
+
+@media only screen and (min-width: 751px)
+
+  article.post .post-content
+    padding 2em 5em
+
+  .post-header h1
+    font-size 36px
+
+  .post-background
+    height 500px
