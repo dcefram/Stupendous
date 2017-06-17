@@ -3,17 +3,27 @@
   max-width 100%
   margin 0
   overflow hidden
-  position relative
-  z-index 1
+  position fixed
+  top 0
+  width 100%
+  z-index 2
   border 0
   display flex
+
+  .menu-toggle
+    align-items center
+    justify-content center
+    cursor pointer
+    transition all ease 0.7s
+    -webkit-transition all ease 0.7s
+
+    &:hover
+        color darken(lightBlue500, 50%)
 
   .site-title
     font-family headerFontFamily
     font-size 40px
-    position absolute
-    height 100%
-    width 100%
+    position relative
     text-align center
     left 0
     display flex
@@ -36,7 +46,7 @@
   ul
     flex 1
     position relative
-    z-index 1
+    z-index 0
     margin-left 30px
 
     li
@@ -57,7 +67,7 @@
     flex 1
     position relative
     text-align right
-    z-index 1
+    z-index 0
     align-items center
     justify-content flex-end
     padding-right 30px

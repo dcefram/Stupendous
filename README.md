@@ -25,6 +25,7 @@ See [Releases](https://github.com/dcefram/stupendous/releases)
 I currently have a fulltime work, along with some other hobbies or other
 'ventures'. Don't worry though, I'll get back to this project from time to time.
 
+- Implement Search
 - Implement Blog Cover, possibly similar to how casper does it (covers the whole page if the blog cover exists)
 - Implement featured posts (I got no usecase for it right now, but it could be a good addition)
 

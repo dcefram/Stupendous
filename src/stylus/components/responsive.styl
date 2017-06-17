@@ -2,35 +2,59 @@
 /**
  * Media Queries
  */
-@media only screen and (max-width: 750px)
+@media only screen and (max-width: 768px)
 
   footer section span.copyright
     display block
 
   nav#navigator
+    height mobNavHeight
+    z-index 2
 
-    .logo
+    .menu-toggle
+      display flex
       flex 0
+      min-width 90px
 
-      .in-logo
-        display inline-block
-        max-width 100%
+    .site-title
+      flex 1
 
-      .logo-image
-        margin auto
+    .socials
+      flex 0
+      min-width 60px
 
     ul.nav
-      display flex
-      float left
-      flex-wrap wrap
+      background black
+      display block
+      max-height 0px
+      left 0
+      top mobNavHeight
+      position absolute
+      width 100%
+      transition max-height 0.3s ease-in-out
+      margin 0
 
       li
-        width auto
-        flex 1 auto
+        float none
+        display block
 
         a
-          min-width 80px
+          padding 15px 0
           width 100%
+
+        &:last-of-type
+
+          a
+            padding-bottom 30px
+
+    &.expanded
+      overflow visible
+
+      ul.nav
+        max-height 100vh
+
+      .menu-toggle
+        color darken(lightBlue500, 50%)
 
   .older-posts, .newer-posts
     position static
@@ -47,7 +71,18 @@
   .post-title
     line-height 35px
 
-@media only screen and (min-width: 751px)
+  .content
+    margin-top mobNavHeight
+    padding 0
+
+  article, article.preview, a.archive-link, .article-nav
+    width 100%
+
+  article.post
+    &.no-post-header
+      margin-top 0
+
+@media only screen and (min-width: 769px)
 
   article.post .post-content
     padding 2em 5em
@@ -57,3 +92,6 @@
 
   .post-background
     height 500px
+
+  .menu-toggle
+    display none

@@ -68,7 +68,6 @@ a:visited {
   -o-transition: all ease 0.7s;
   -ms-transition: all ease 0.7s;
   transition: all ease 0.7s;
-  -webkit-transition: all ease 0.7s;
 }
 a:focus,
 a:hover {
@@ -163,8 +162,10 @@ table tfoot {
   max-width: 100%;
   margin: 0;
   overflow: hidden;
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
   border: 0;
   display: -webkit-box;
   display: -moz-box;
@@ -173,12 +174,34 @@ table tfoot {
   display: box;
   display: flex;
 }
+#navigator .menu-toggle {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all ease 0.7s;
+  -moz-transition: all ease 0.7s;
+  -o-transition: all ease 0.7s;
+  -ms-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+  -webkit-transition: all ease 0.7s;
+}
+#navigator .menu-toggle:hover {
+  color: #01547a;
+}
 #navigator .site-title {
   font-family: 'Amatic SC', 'Merriweather', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, 'Nimbus L', sans-serif, cursive;
   font-size: 40px;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  position: relative;
   text-align: center;
   left: 0;
   display: -webkit-box;
@@ -218,7 +241,7 @@ table tfoot {
   -ms-flex: 1;
   flex: 1;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   margin-left: 30px;
 }
 #navigator ul li {
@@ -246,7 +269,7 @@ table tfoot {
   flex: 1;
   position: relative;
   text-align: right;
-  z-index: 1;
+  z-index: 0;
   -webkit-box-align: center;
   -moz-box-align: center;
   -o-box-align: center;
@@ -328,7 +351,8 @@ article.preview p.readmore a:hover {
 }
 .content {
   position: relative;
-  padding-top: 40px;
+  padding-top: 20px;
+  margin-top: 80px;
 }
 .content.with-header {
   padding-top: 0;
@@ -980,43 +1004,71 @@ a.archive-link {
     filter: alpha(opacity=0);
   }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
   footer section span.copyright {
     display: block;
   }
-  nav#navigator .logo {
-    -webkit-flex: 0;
-    -ms-flex: 0;
-    flex: 0;
+  nav#navigator {
+    height: 70px;
+    z-index: 2;
   }
-  nav#navigator .logo .in-logo {
-    display: inline-block;
-    max-width: 100%;
-  }
-  nav#navigator .logo .logo-image {
-    margin: auto;
-  }
-  nav#navigator ul.nav {
+  nav#navigator .menu-toggle {
     display: -webkit-box;
     display: -moz-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: box;
     display: flex;
-    float: left;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    -webkit-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    min-width: 90px;
+  }
+  nav#navigator .site-title {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+  nav#navigator .socials {
+    -webkit-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    min-width: 60px;
+  }
+  nav#navigator ul.nav {
+    background: #000;
+    display: block;
+    max-height: 0px;
+    left: 0;
+    top: 70px;
+    position: absolute;
+    width: 100%;
+    -webkit-transition: max-height 0.3s ease-in-out;
+    -moz-transition: max-height 0.3s ease-in-out;
+    -o-transition: max-height 0.3s ease-in-out;
+    -ms-transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
+    margin: 0;
   }
   nav#navigator ul.nav li {
-    width: auto;
-    -webkit-flex: 1 auto;
-    -ms-flex: 1 auto;
-    flex: 1 auto;
+    float: none;
+    display: block;
   }
   nav#navigator ul.nav li a {
-    min-width: 80px;
+    padding: 15px 0;
     width: 100%;
+  }
+  nav#navigator ul.nav li:last-of-type a {
+    padding-bottom: 30px;
+  }
+  nav#navigator.expanded {
+    overflow: visible;
+  }
+  nav#navigator.expanded ul.nav {
+    max-height: 100vh;
+  }
+  nav#navigator.expanded .menu-toggle {
+    color: #01547a;
   }
   .older-posts,
   .newer-posts {
@@ -1034,8 +1086,21 @@ a.archive-link {
   .post-title {
     line-height: 35px;
   }
+  .content {
+    margin-top: 70px;
+    padding: 0;
+  }
+  article,
+  article.preview,
+  a.archive-link,
+  .article-nav {
+    width: 100%;
+  }
+  article.post.no-post-header {
+    margin-top: 0;
+  }
 }
-@media only screen and (min-width: 751px) {
+@media only screen and (min-width: 769px) {
   article.post .post-content {
     padding: 2em 5em;
   }
@@ -1044,5 +1109,8 @@ a.archive-link {
   }
   .post-background {
     height: 500px;
+  }
+  .menu-toggle {
+    display: none;
   }
 }

@@ -1,1 +1,1 @@
-"use strict";
+"use strict";!function(){var e=document.querySelector(".menu-toggle"),t=document.getElementById("navigator");e.addEventListener("click",function(){t.classList.contains("expanded")?t.classList.remove("expanded"):t.classList.add("expanded")})}();
