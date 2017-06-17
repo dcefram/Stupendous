@@ -298,7 +298,7 @@ article.preview,
 a.archive-link,
 .article-nav {
   position: relative;
-  max-width: 1024px;
+  max-width: 700px;
   overflow: hidden;
   width: 90%;
   z-index: 1;
@@ -382,7 +382,7 @@ article.preview p.readmore a:hover {
 .post-header {
   position: relative;
   padding: 10em 1em 5em;
-  max-width: 1024px;
+  max-width: 700px;
   margin: auto;
   -webkit-transition: padding ease 0.5s;
   -moz-transition: padding ease 0.5s;
@@ -577,7 +577,7 @@ img.userimage {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 15px auto 0;
-  max-width: 1024px;
+  max-width: 700px;
   width: 90%;
 }
 .read-next .read-next-story {
