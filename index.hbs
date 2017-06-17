@@ -1,11 +1,13 @@
 {{!< default}}
 
-<main class="content" role="main">
+<main class="content{{#if @blog.logo}} with-header{{/if}}" role="main">
 
+  {{#if @blog.logo}}
   <header id="site-head">
     <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
     {{> header-description}}
   </header>
+  {{/if}}
 
   {{#foreach posts}}
 

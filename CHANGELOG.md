@@ -1,3 +1,8 @@
+# 1.5.0 - 2017-06-17
+  - Update how the navigation bar looks like
+  - Make design a little more mobile friendly
+  - Remove social icons, only use fontawesome for icons
+
 # 1.4.0 - 2016-03-18
   - Add custom navigation support
   - Add additional icons (icons from [iconfinder/social-hand-drawn-icons](https://www.iconfinder.com/iconsets/social-hand-drawn-icons))

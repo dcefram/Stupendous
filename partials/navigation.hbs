@@ -1,8 +1,0 @@
-<ul class="nav">
-  {{#if @blog.logo}}<li class="logo"><a class="blog-logo in-logo" href="{{@blog.url}}"><div class="logo-image" style="background: url({{@blog.logo}})"></div></a></li>{{/if}}
-{{#foreach navigation}}
-  <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}">
-    <a href="{{url absolute="true"}}"></a>
-  </li>
-{{/foreach}}
-</ul>

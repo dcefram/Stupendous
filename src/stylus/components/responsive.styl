@@ -1,0 +1,97 @@
+
+/**
+ * Media Queries
+ */
+@media only screen and (max-width: 768px)
+
+  footer section span.copyright
+    display block
+
+  nav#navigator
+    height mobNavHeight
+    z-index 2
+
+    .menu-toggle
+      display flex
+      flex 0
+      min-width 90px
+
+    .site-title
+      flex 1
+
+    .socials
+      flex 0
+      min-width 60px
+
+    ul.nav
+      background black
+      display block
+      max-height 0px
+      left 0
+      top mobNavHeight
+      position absolute
+      width 100%
+      transition max-height 0.3s ease-in-out
+      margin 0
+
+      li
+        float none
+        display block
+
+        a
+          padding 15px 0
+          width 100%
+
+        &:last-of-type
+
+          a
+            padding-bottom 30px
+
+    &.expanded
+      overflow visible
+
+      ul.nav
+        max-height 100vh
+
+      .menu-toggle
+        color darken(lightBlue500, 50%)
+
+  .older-posts, .newer-posts
+    position static
+
+  .newer-posts
+    margin-bottom 10px
+
+  .older-posts
+    margin-top 10px
+
+  .page-number
+    display block
+
+  .post-title
+    line-height 35px
+
+  .content
+    margin-top mobNavHeight
+    padding 0
+
+  article, article.preview, a.archive-link, .article-nav
+    width 100%
+
+  article.post
+    &.no-post-header
+      margin-top 0
+
+@media only screen and (min-width: 769px)
+
+  article.post .post-content
+    padding 2em 5em
+
+  .post-header h1
+    font-size 36px
+
+  .post-background
+    height 500px
+
+  .menu-toggle
+    display none
