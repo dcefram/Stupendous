@@ -1,3 +1,7 @@
+# 1.5.1 - 2017-06-21
+  - Fix layout in page and post views
+  - Fix sizing of prev/next article suggestion
+
 # 1.5.0 - 2017-06-17
   - Update how the navigation bar looks like
   - Make design a little more mobile friendly

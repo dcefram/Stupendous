@@ -298,7 +298,7 @@ article.preview,
 a.archive-link,
 .article-nav {
   position: relative;
-  max-width: 700px;
+  max-width: 720px;
   overflow: hidden;
   width: 90%;
   z-index: 1;
@@ -382,7 +382,7 @@ article.preview p.readmore a:hover {
 .post-header {
   position: relative;
   padding: 10em 1em 5em;
-  max-width: 700px;
+  max-width: 720px;
   margin: auto;
   -webkit-transition: padding ease 0.5s;
   -moz-transition: padding ease 0.5s;
@@ -577,20 +577,23 @@ img.userimage {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 15px auto 0;
-  max-width: 700px;
+  max-width: 720px;
   width: 90%;
 }
 .read-next .read-next-story {
   background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   color: #757575;
   padding: 2em;
   text-align: center;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  -webkit-flex-basis: 300px;
-  -ms-flex-basis: 300px;
-  flex-basis: 300px;
+  -webkit-flex-basis: 360px;
+  -ms-flex-basis: 360px;
+  flex-basis: 360px;
 }
 .read-next .read-next-story:hover {
   color: #03a9f4;

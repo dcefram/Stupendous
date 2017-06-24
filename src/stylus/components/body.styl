@@ -3,7 +3,7 @@
  */
 article, article.preview, a.archive-link, .article-nav
   position relative
-  max-width 700px
+  max-width articleWidth
   overflow hidden
   width 90%
   z-index 1
@@ -73,7 +73,7 @@ article.preview
 .post-header
   position relative
   padding 10em 1em 5em
-  max-width 700px
+  max-width articleWidth
   margin auto
   transition padding ease 0.5s
   z-index 1
@@ -232,25 +232,32 @@ img.userimage
   display flex
   flex-wrap wrap
   margin 15px auto 0
-  max-width 700px
+  max-width articleWidth
   width 90%
+
   .read-next-story
     background white
+    box-sizing border-box
     color grey600
     padding 2em
     text-align center
     flex 1
-    flex-basis 300px
+    flex-basis (articleWidth / 2)
+
     &:hover
       color lightBlue500
+
       h2
         color lightBlue500
+
       .post:before
         color lightBlue500
         border-color lightBlue500
+
     h2
       margin 1em 0 0
       text-align center
+
     .post:before
       content "Now Read This"
       padding 4px 10px 5px
@@ -260,18 +267,24 @@ img.userimage
       color alpha(#000,0.8)
       border alpha(#000,0.5) 1px solid
       border-radius 4px
+
     &.prev
       color white
       background black
+
       &:hover
         color grey600
+
         h2
           color grey600
+
         .post:before
           color grey600
           border-color grey600
+
       h2
         color white
+
       .post:before
         color white
         content "You Might Enjoy"
@@ -285,6 +298,7 @@ footer
   margin 4em 0 0
   padding 2em 0
   text-align center
+
   section
     font-family secondaryFontFamily
     font-weight 300
@@ -293,6 +307,7 @@ footer
     max-width 600px
     text-transform uppercase
     width 90%
+
   &.post-footer
     background none
     border-top 1px solid grey200
@@ -311,6 +326,7 @@ nav
   text-align center
   margin 20px auto 2em auto
   max-width 600px
+
   ul
     list-style none
     margin 0 auto
@@ -318,6 +334,7 @@ nav
     width 100%
     overflow hidden
     text-align center
+
     li
       display inline-block
       font-family secondaryFontFamily
@@ -327,26 +344,35 @@ nav
       padding 0 0.5em
       text-align center
       text-transform uppercase
+
       a
         display block
         padding 0.5em 0
+
   &.menu
     margin-bottom 2.5em
+
     li
       margin 0 0.5em
       padding 0
+
       &:last-child
         margin 0
+
   &.pagination
+
     li
+
       &:first-child
         margin-left 0
         margin-right 0
         text-align right
+
       &:last-child
         margin-left 0
         margin-right 0
         text-align left
+
 a.archive-link
   border-bottom 1px solid grey200
   border-top 1px solid grey200
@@ -370,6 +396,7 @@ a.archive-link
   color #7F8C8D
   text-align center
   padding 0.5em 0
+
   a
     color #3498DB
 

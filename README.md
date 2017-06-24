@@ -1,16 +1,11 @@
 # Stupendous
 
-A [ghost](https://ghost.org) and [stylus](http://learnboost.github.io/stylus/)
-experiment. Initially forked from [Vapor](https://github.com/sethlilly/Vapor),
-did some customization by adding some salt and pepper and then switched away
-from less.
-
-Check out [my blog](http://dcefram.com) if ever you are curious as to
+My personal blog's Ghost theme. Check out [my blog](http://dcefram.com) if ever you are curious as to
 how this thing look like.
 
-This theme only supports Blink based browsers (Chrome, Opera), Safari, Firefox, and IE10+ (including Edge). IE9 might be supported.
+This theme only supports Blink based browsers (Chrome, Opera), Webkit (ie. Safari), Firefox, and IE10+ (including Edge). IE9 might be supported.
 
-I don't plan to support older IE because those browsers will stay if websites still support it, even though those browsers are not supported anymore
+I don't plan to support older IE because those browsers will stay if websites still support it, even though those browsers are not maintained anymore.
 
 ## Contributing and Forking
 
@@ -32,10 +27,8 @@ I currently have a fulltime work, along with some other hobbies or other
 ## License
 Copyright (c) 2014-2017, Daniel Cefram Ramirez - Released under The MIT License.
 
-Forked from Vapor, so basically...
-
-Copyright (c) 2013-2014 Seth Lilly - Released under The MIT License.
-
 ## Credits
 
-- [Vapor](https://github.com/sethlilly/Vapor) by [Seth Lilly](http://sethlilly.com)
+- [Font Awesome](http://fontawesome.io/) - For the awesome icons
+- [Prism](http://prismjs.com/) - For code highlighting in code blocks
+- [Vapor](https://github.com/sethlilly/Vapor) - The theme that I initially forked for my personal blog. Some behaviors in my theme is influenced by Vapor's design.
