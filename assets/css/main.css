@@ -661,6 +661,10 @@ img.userimage {
   -o-transition: all ease 0.7s;
   -ms-transition: all ease 0.7s;
   transition: all ease 0.7s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
 }
 .read-next .read-next-story .post.cover-background {
   background: rgba(0,0,0,0.5);

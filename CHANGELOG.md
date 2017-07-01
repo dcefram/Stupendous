@@ -1,3 +1,6 @@
+# 1.5.3 - 2017-07-01
+  - Fix cover image height
+
 # 1.5.2 - 2017-07-01
   - Show cover image of post in next/prev post container
 
@@ -5,7 +8,7 @@
   - Fix layout in page and post views
   - Fix sizing of prev/next article suggestion
   - Remove extra spacing on top of page and post layouts
-  - Next/previous suggested post flex basis should depend on max-width 
+  - Next/previous suggested post flex basis should depend on max-width
 
 # 1.5.0 - 2017-06-17
   - Update how the navigation bar looks like
