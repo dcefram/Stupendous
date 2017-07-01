@@ -1,3 +1,6 @@
+# 1.5.2 - 2017-07-01
+  - Show cover image of post in next/prev post container
+
 # 1.5.1 - 2017-06-21
   - Fix layout in page and post views
   - Fix sizing of prev/next article suggestion

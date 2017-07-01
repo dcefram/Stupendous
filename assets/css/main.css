@@ -563,6 +563,7 @@ img.userimage {
   float: left;
 }
 .read-next {
+  background: #000;
   -webkit-align-content: flex-start;
   -ms-align-content: flex-start;
   align-content: flex-start;
@@ -581,12 +582,14 @@ img.userimage {
   width: 90%;
 }
 .read-next .read-next-story {
-  background: #fff;
+  background-color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: #757575;
-  padding: 2em;
   text-align: center;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -608,6 +611,11 @@ img.userimage {
 .read-next .read-next-story h2 {
   margin: 1em 0 0;
   text-align: center;
+  -webkit-transition: all ease 0.7s;
+  -moz-transition: all ease 0.7s;
+  -o-transition: all ease 0.7s;
+  -ms-transition: all ease 0.7s;
+  transition: all ease 0.7s;
 }
 .read-next .read-next-story .post:before {
   content: "Now Read This";
@@ -618,10 +626,15 @@ img.userimage {
   color: rgba(0,0,0,0.8);
   border: 1px solid rgba(0,0,0,0.5) 1px solid;
   border-radius: 4px;
+  -webkit-transition: all ease 0.7s;
+  -moz-transition: all ease 0.7s;
+  -o-transition: all ease 0.7s;
+  -ms-transition: all ease 0.7s;
+  transition: all ease 0.7s;
 }
 .read-next .read-next-story.prev {
   color: #fff;
-  background: #000;
+  background-color: #000;
 }
 .read-next .read-next-story.prev:hover {
   color: #757575;
@@ -640,6 +653,35 @@ img.userimage {
   color: #fff;
   content: "You Might Enjoy";
   border: 1px solid rgba(255,255,255,0.5) 1px solid;
+}
+.read-next .read-next-story .post {
+  padding: 2em;
+  -webkit-transition: all ease 0.7s;
+  -moz-transition: all ease 0.7s;
+  -o-transition: all ease 0.7s;
+  -ms-transition: all ease 0.7s;
+  transition: all ease 0.7s;
+}
+.read-next .read-next-story .post.cover-background {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+}
+.read-next .read-next-story .post.cover-background h2 {
+  color: #fff;
+}
+.read-next .read-next-story .post.cover-background:before {
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.5) 1px solid;
+}
+.read-next .read-next-story .post.cover-background:hover {
+  color: #03a9f4;
+}
+.read-next .read-next-story .post.cover-background:hover h2 {
+  color: #03a9f4;
+}
+.read-next .read-next-story .post.cover-background:hover:before {
+  color: #03a9f4;
+  border-color: lightBlu500;
 }
 footer {
   background: rgba(0,0,0,0.05);

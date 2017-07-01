@@ -227,6 +227,7 @@ img.userimage
  * Read next
  */
 .read-next
+  background black
   align-content flex-start
   display -webkit-flex
   display flex
@@ -236,10 +237,10 @@ img.userimage
   width 90%
 
   .read-next-story
-    background white
+    background-color white
+    background-size cover
     box-sizing border-box
     color grey600
-    padding 2em
     text-align center
     flex 1
     flex-basis (articleWidth / 2)
@@ -257,6 +258,7 @@ img.userimage
     h2
       margin 1em 0 0
       text-align center
+      transition all ease 0.7s
 
     .post:before
       content "Now Read This"
@@ -264,13 +266,14 @@ img.userimage
       text-transform uppercase
       font-size 0.8rem
       font-family "Open Sans", sans-serif
-      color alpha(#000,0.8)
-      border alpha(#000,0.5) 1px solid
+      color alpha(black,0.8)
+      border alpha(black,0.5) 1px solid
       border-radius 4px
+      transition all ease 0.7s
 
     &.prev
       color white
-      background black
+      background-color black
 
       &:hover
         color grey600
@@ -289,6 +292,31 @@ img.userimage
         color white
         content "You Might Enjoy"
         border alpha(white,0.5) 1px solid
+
+    .post
+      padding 2em
+      transition all ease 0.7s
+
+      &.cover-background
+        background rgba(0, 0, 0, 0.5)
+        color white
+
+        h2
+          color white
+
+        &:before
+          color white
+          border alpha(white,0.5) 1px solid
+
+        &:hover
+          color lightBlue500
+
+          h2
+            color lightBlue500
+
+          &:before
+            color lightBlue500
+            border-color lightBlu500
 
 /**
  * Footer
