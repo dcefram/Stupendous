@@ -4,6 +4,8 @@
 # 1.5.1 - 2017-06-21
   - Fix layout in page and post views
   - Fix sizing of prev/next article suggestion
+  - Remove extra spacing on top of page and post layouts
+  - Next/previous suggested post flex basis should depend on max-width 
 
 # 1.5.0 - 2017-06-17
   - Update how the navigation bar looks like
