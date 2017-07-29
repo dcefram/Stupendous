@@ -34,4 +34,4 @@ Copyright (c) 2014-2017, Daniel Cefram Ramirez - Released under The MIT License.
 
 - [Font Awesome](http://fontawesome.io/) - For the awesome icons
 - [Prism](http://prismjs.com/) - For code highlighting in code blocks
-- [Vapor](https://github.com/sethlilly/Vapor) - The theme that I initially forked for my personal blog. Some behaviors in my theme is influenced by Vapor's design.
+- [Vapor](https://github.com/sethlilly/Vapor) - The theme that I initially forked for my personal blog. Some behavior in my theme is influenced by Vapor's design.
