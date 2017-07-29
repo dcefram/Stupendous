@@ -1,9 +1,9 @@
 {{!< default}}
 
 <main class="content with-header" role="main">
-  {{#if tag.image}}
+  {{#if tag.feature_image}}
   <div class="post-background">
-    <div class="image" style="background-image: url({{tag.image}});"></div>
+    <div class="image" style="background-image: url({{tag.feature_image}});"></div>
   </div>
   <header id="site-head" class="tag">
     {{#if @blog.logo}}<h1 class="blog-title">{{@blog.title}}</h1>{{/if}}
@@ -23,9 +23,9 @@
   {{#foreach posts}}
 
   <article class="preview">
-    {{#if image}}
+    {{#if img_url feature_image}}
     <div class="preview-image">
-      <a href="{{url}}" title="{{title}}"><p><img src="{{image}}" alt="Featured" /></p></a>
+      <a href="{{url}}" title="{{title}}"><p><img src="{{img_url feature_image}}" alt="Featured" /></p></a>
     </div>
     {{/if}}
     <header>

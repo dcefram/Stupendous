@@ -1,3 +1,6 @@
+# 2.0.0 - 2017-07-29
+  - Support Ghost 1.0.0
+
 # 1.5.3 - 2017-07-01
   - Fix cover image height
 

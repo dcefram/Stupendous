@@ -12,9 +12,9 @@
   {{#foreach posts}}
 
   <article class="preview">
-    {{#if image}}
+    {{#if img_url feature_image}}
     <div class="preview-image">
-      <a href="{{url}}" title="{{title}}"><p><img src="{{image}}" alt="Featured" /></p></a>
+      <a href="{{url}}" title="{{title}}"><p><img src="{{img_url feature_image}}" alt="Featured" /></p></a>
     </div>
     {{/if}}
     <header>

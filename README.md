@@ -7,6 +7,9 @@ This theme only supports Blink based browsers (Chrome, Opera), Webkit (ie. Safar
 
 I don't plan to support older IE because those browsers will stay if websites still support it, even though those browsers are not maintained anymore.
 
+# Note:
+Version 2.0.0 will work only in Ghost 1.0.0. Please use earlier versions of this theme if you are using Ghost version 0.11.x.
+
 ## Contributing and Forking
 
 Just fork. Send pull requests. And/Or submit issues.
