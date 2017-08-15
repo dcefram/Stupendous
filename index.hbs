@@ -12,13 +12,13 @@
   {{#foreach posts}}
 
   <article class="preview">
-    {{#if img_url feature_image}}
+    {{#if feature_image}}
     <div class="preview-image">
       <a href="{{url}}" title="{{title}}"><p><img src="{{img_url feature_image}}" alt="Featured" /></p></a>
     </div>
     {{/if}}
     <header>
-      <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
+      <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
       <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></div>
     </header>
     <section class="post-excerpt">

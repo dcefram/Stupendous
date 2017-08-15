@@ -1,21 +1,21 @@
 {{!< default}}
 {{#post}}
-<main class="content{{#if img_url feature_image}} with-header{{/if}}" role="main">
-  {{#if img_url feature_image}}
+<main class="content{{#if feature_image}} with-header{{/if}}" role="main">
+  {{#if feature_image}}
   <div class="post-background">
-    <div class="image" style="background-image: url({{img_url feature_image}});"></div>
+    <div class="image" style="background-image: url({{feature_image}});"></div>
   </div>
   <header class="post-header">
-    <h1 class="post-title">{{{title}}}</h1>
+    <h1 class="post-title">{{title}}</h1>
     <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></div>
   </header>
 
   {{/if}}
 
   <article class="{{post_class}} {{#unless image}}no-post-header{{/unless}}">
-    {{#unless img_url feature_image}}
+    {{#unless feature_image}}
     <header>
-      <h1 class="post-title">{{{title}}}</h1>
+      <h1 class="post-title">{{title}}</h1>
       <div class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></div>
     </header>
     {{/unless}}
@@ -55,23 +55,23 @@
 
 
 
-    {{!> comments-disqus}}
+    {{> comments-disqus}}
     {{!> comments-facebook}}
     {{!> comments-google-plus}}
   </article>
 
   <aside class="read-next">
     {{#next_post}}
-    <a class="read-next-story" href="{{url}}"{{#if img_url feature_image}} style="background-image: url({{img_url feature_image}});"{{/if}}>
-      <section class="post{{#if img_url feature_image}} cover-background{{/if}}">
+    <a class="read-next-story" href="{{url}}"{{#if feature_image}} style="background-image: url({{feature_image}});"{{/if}}>
+      <section class="post{{#if feature_image}} cover-background{{/if}}">
         <h2>{{title}}</h2>
         <p>{{excerpt words="19"}}&hellip;</p>
       </section>
     </a>
     {{/next_post}}
     {{#prev_post}}
-    <a class="read-next-story prev" href="{{url}}"{{#if img_url feature_image}} style="background-image: url({{img_url feature_image}});"{{/if}}>
-      <section class="post{{#if img_url feature_image}} cover-background{{/if}}">
+    <a class="read-next-story prev" href="{{url}}"{{#if feature_image}} style="background-image: url({{feature_image}});"{{/if}}>
+      <section class="post{{#if feature_image}} cover-background{{/if}}">
         <h2>{{title}}</h2>
         <p>{{excerpt words="19"}}&hellip;</p>
       </section>
