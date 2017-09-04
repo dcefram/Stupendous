@@ -1,7 +1,7 @@
 # Stupendous
 
-My personal blog's Ghost theme. Check out [my blog](http://dcefram.com) if ever you are curious as to
-how this thing look like.
+My personal blog's Ghost theme. ~~Check out my blog if ever you are curious as to
+how this thing look like.~~ (I had to cut costs, and Ghost eats up RAM... had to shut it down. Sorry)
 
 This theme only supports Blink based browsers (Chrome, Opera), Webkit (ie. Safari), Firefox, and IE10+ (including Edge). IE9 might be supported.
 
